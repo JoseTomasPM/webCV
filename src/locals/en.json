@@ -3,7 +3,8 @@
             "partida": "Start Game",
             "misiones": "Quests",
             "skills": "Skills",
-            "config": "Settings"
+            "config": "Settings",
+            "contact": "Contact Information"
         },
         "sections": {
             "partida": {
@@ -20,7 +21,7 @@
             },
             "skills": {
                 "title": "Unlocked Skills",
-                "description": "HTML, \n\n CSS, \n\n JavaScript, \n\n React, \n\n Tailwind, \n\n Next.js..."
+                "description": ".NET9 + MAUI \n\n Next.js + Javascript \n\n Django + Bootstrap \n\n HTML + CSS "
             },
             "config": {
                 "title": "Settings",

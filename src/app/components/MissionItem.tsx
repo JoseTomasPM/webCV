@@ -1,12 +1,5 @@
 "use client"
 
-import { useEffect } from "react"
-
-type Props = {
-    title: string;
-    progress: number;
-};
-
 export default function MissionItem({ title, progress, link }: {
     title: string;
     progress: number;

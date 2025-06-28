@@ -3,7 +3,8 @@
             "partida": "Empezar Partida",
             "misiones": "Misiones",
             "skills": "Skills",
-            "config": "Configuración"
+            "config": "Configuración",
+            "contact": "Datos de contacto"
         },
         "sections": {
             "partida": {
@@ -20,7 +21,7 @@
             },
             "skills": {
                 "title": "Skills desbloqueadas",
-                "description": "HTML, \n\n CSS, \n\n JavaScript, \n\n React, \n\n Tailwind, \n\n Next.js..."
+                "description": ".NET9 + MAUI \n\n Next.js + Javascript \n\n Django + Bootstrap \n\n HTML + CSS "
             },
             "config": {
                 "title": "Configuración",

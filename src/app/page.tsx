@@ -24,7 +24,7 @@ export default function Home() {
     }
   }, []);
 
- 
+
 
   return (
     <main className="min-h-screen p-4">
@@ -40,7 +40,7 @@ export default function Home() {
         <Section title={t("sections.misiones.title")}>
           <MissionItem title={t("sections.misiones.items.P1")} progress={90} link="https://github.com/JoseTomasPM/ColorPaletteApp"  />
           <MissionItem title={t("sections.misiones.items.P2")} progress={60} link="https://github.com/JoseTomasPM/FaviconMaker" />
-          <MissionItem title={t("sections.misiones.items.P3")} progress={99} link="https://github.com/JoseTomasPM/proyecto1" />          
+          <MissionItem title={t("sections.misiones.items.P3")} progress={99} link="https://github.com/JoseTomasPM/webcv" />          
         </Section>
       )}
 
