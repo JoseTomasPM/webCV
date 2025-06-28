@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
 
-const nextConfig: NextConfig = {
-  /* config options here */
+  // Opcionales:
+  // trailingSlash: true, // agrega `/` al final de las URLs
+  // distDir: 'dist', // si querés cambiar el nombre de la carpeta `out`
 };
 
 export default nextConfig;
