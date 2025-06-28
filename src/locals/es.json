@@ -1,0 +1,31 @@
+    {
+        "nav": {
+            "partida": "Empezar Partida",
+            "misiones": "Misiones",
+            "skills": "Skills",
+            "config": "Configuración"
+        },
+        "sections": {
+            "partida": {
+                "title": "Bienvenido",
+                "description": "Soy José Tomás Pérez Martinez, desarrollador dedicado y con ganas de aprender. "
+            },
+            "misiones": {
+                "title": "Misiones en progreso",
+                "items": {
+                    "P1": "Generador paleta de colores",
+                    "P2": "Generador de Favicon",
+                    "P3": "Web/CV"
+                }
+            },
+            "skills": {
+                "title": "Skills desbloqueadas",
+                "description": "HTML, \n\n CSS, \n\n JavaScript, \n\n React, \n\n Tailwind, \n\n Next.js..."
+            },
+            "config": {
+                "title": "Configuración",
+                "github": "GitHub",
+                "cv": "Descargar CV"
+            }
+        }
+    }

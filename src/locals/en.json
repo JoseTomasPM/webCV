@@ -1,0 +1,31 @@
+    {
+        "nav": {
+            "partida": "Start Game",
+            "misiones": "Quests",
+            "skills": "Skills",
+            "config": "Settings"
+        },
+        "sections": {
+            "partida": {
+                "title": "Welcome",
+                "description": "I'm José Tomás Pérez Martinez, a dedicated developer with a strong desire to learn."
+            },
+            "misiones": {
+                "title": "Quests in progress",
+                "items": {
+                    "P1": "Color palette generator",
+                    "P2": "Favicon generator",
+                    "P3": "Web/CV"
+                }
+            },
+            "skills": {
+                "title": "Unlocked Skills",
+                "description": "HTML, \n\n CSS, \n\n JavaScript, \n\n React, \n\n Tailwind, \n\n Next.js..."
+            },
+            "config": {
+                "title": "Settings",
+                "github": "GitHub",
+                "cv": "Download CV"
+            }
+        }
+    }

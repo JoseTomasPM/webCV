@@ -1,0 +1,209 @@
+/* === Importación de Tailwind === */
+@import "tailwindcss";
+
+/* === Variables globales (colores, tipografía, sombras) === */
+:root {
+    --font-body: 'Press Start 2P', cursive;
+    --color-background: black;
+    --color-text: #cc99ff; 
+    --color-border: #0f0;
+    --color-accent: #6600cc; 
+    --color-link: #66ccff; 
+    --shadow-glow: 0 0 12px #0f0, inset 0 0 6px #0f0;
+}
+
+/* === Estilos base del body === */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    
+    /* Simula líneas horizontales estilo CRT */
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0, 255, 0, 0.1) 0,
+        rgba(0, 255, 0, 0.1) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    
+    /* Animación de escaneo CRT */
+    animation: crt-scan 5s linear infinite;
+
+    margin: 0;
+    padding: 0;
+
+    /* Estilo pixelado */
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Animación: desplazamiento de líneas CRT === */
+@keyframes crt-scan {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+/* === Contenedor estilo retro con borde y sombra === */
+.section-box {
+    padding: 1.5rem;
+    border-radius: 0;
+    border: 2px solid var(--color-border);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    box-shadow:
+        2px 2px 0 var(--color-border),
+        -2px -2px 0 var(--color-border);
+    position: relative;
+    overflow: hidden;
+    image-rendering: pixelated;
+}
+
+/* === Botones de navegación (estilo retro/pixel) === */
+.nav-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    border: 2px solid var(--color-border);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    box-shadow:
+        2px 2px 0 var(--color-border),
+        -2px -2px 0 var(--color-border);
+    cursor: pointer;
+    user-select: none;
+    transition: none;
+    image-rendering: pixelated;
+}
+
+/* === Botón activo de navegación === */
+.nav-button-active {
+    background-color: var(--color-text);
+    color: black;
+    box-shadow:
+        3px 3px 0 var(--color-link),
+        -3px -3px 0 var(--color-accent);
+    transform: none;
+}
+
+/* === Botón inactivo con hover === */
+.nav-button-inactive:hover {
+    background-color: #004400;
+    color: var(--color-text);
+}
+
+/* === Botón inactivo de navegación === */
+.nav-button-inactive {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* === Texto con efecto glitch tipo retro === */
+.glitch-text {
+    position: relative;
+    color: var(--color-text);
+    -webkit-text-stroke: 1px var(--color-border);
+    text-shadow:
+        2px 0 var(--color-link),
+        -2px 0 var(--color-accent);
+    animation: glitch 1.5s infinite;
+    image-rendering: pixelated;
+    user-select: none;
+}
+
+/* === Animación de glitch === */
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 1px); }
+    40% { transform: translate(2px, -1px); }
+    60% { transform: translate(-1px, 2px); }
+    80% { transform: translate(1px, -2px); }
+    100% { transform: translate(0); }
+}
+
+/* === Utilidad para aplicar estilo pixelado donde sea necesario === */
+.pixelated {
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Enlaces estilo pixel retro === */
+.pixel-link {
+    color: #ffee00;
+    text-decoration: none; 
+    text-underline-offset: unset;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    user-select: none;
+    image-rendering: pixelated;
+}
+
+/* === Hover/focus en enlaces pixel === */
+.pixel-link:hover,
+.pixel-link:focus {
+    text-decoration: none;
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    text-shadow:
+        0 0 6px var(--color-accent),
+        0 0 10px var(--color-accent);
+    outline: none;
+}
+
+/* === Botones de idioma con estética retro === */
+.language-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 0 #000;
+    transition: all 0.1s ease-in-out;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+/* === Hover sobre botones de idioma === */
+.language-button:hover {
+    background-color: #444;
+    box-shadow: 1px 1px 0 #000;
+}
+
+/* === Botón de idioma activo === */
+.language-button-active {
+    background-color: #0ff;
+    color: #000;
+    border-color: #000;
+    box-shadow: inset 0px 0px 4px #0ff, 2px 2px 0 #000;
+}
+
+
+
+
+@keyframes progress-stripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100px 0;
+    }
+}
+
+
+.animated-progress {
+    background-image: repeating-linear-gradient(
+        45deg,
+        #0f0 1px,
+        #6600cc 10px
+    );
+    background-size: 100px  1px;
+    animation: progress-stripes 5s linear infinite;
+}
+
+
+
