@@ -64,7 +64,7 @@ export default function Home() {
               {t("sections.config.github")}
             </a>{" "}
             |{" "}
-            <a className="pixel-link" href="webcv/JoséTomás_Pérez_Martínez_CV.pdf" download="JoséTomás_Pérez_Martínez_CV.pdf">
+            <a className="pixel-link" href="webcv/JoséTomás_Pérez_Martínez_CV.pdf" download="webcv/JoséTomás_Pérez_Martínez_CV.pdf">
               {t("sections.config.cv")}
             </a>
           </p>
